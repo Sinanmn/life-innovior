@@ -1,0 +1,30 @@
+.bannercontainer{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: 35% center;
+}
+.bannercontainer h1{
+    font-size: 70px;
+    color: white;
+    z-index: 3;
+}
+
+/* ---------------------For Mobile Devices ------------------- */
+@media (max-width:600px){
+    .bannercontainer{
+        width: 100%;
+        height: 40vh;
+      
+    }
+    .bannercontainer h1{
+        font-size: 35px;
+        color: white;
+        z-index: 3;
+    }
+}

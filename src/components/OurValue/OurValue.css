@@ -1,0 +1,51 @@
+.ourvalue_container{
+    height: 100vh;
+    width: 100%;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 35% center;
+    position: relative;
+}
+.ourvalue_menu{
+background-color: #5D2D77;
+width: 40%;
+height: 100%;
+z-index: 2;
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 30px;
+padding: 0 30px;
+
+}
+.ourvalue_menu h1{
+color: white;
+font-size: 50px;
+margin-bottom: 10px;
+}
+
+
+/* ----------------------For mobile device-------------- */
+
+@media (max-width:600px){
+    .ourvalue_container{
+        height: auto;
+        width: 100%;
+        padding: 0 !important;
+      
+    }
+    .ourvalue_menu{
+    
+    width: 100%;
+    padding: 100px 40px;
+    align-items: center;
+    }
+    .ourvalue_menu h1{
+    font-size: 30px;
+    text-align: center;
+    }
+}
+
+

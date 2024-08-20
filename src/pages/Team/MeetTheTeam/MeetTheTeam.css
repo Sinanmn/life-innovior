@@ -1,0 +1,156 @@
+.meettheteam-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #FBF8FF;
+}
+.meettheteam-container h1{
+    color: var(--color-violet);
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.meettheteam-container .teachers-container{
+   
+    height: 55vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+.meettheteam-container .teachers-container img{
+    height: 100%;
+    width: 100%;
+    
+}
+.meettheteam-container .teachers-container .sir{
+    width: 23%;
+   background-color: var(--color-green);
+   position: relative;
+   overflow: hidden;
+   z-index: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+    
+}
+.meettheteam-container .teachers-container .sir .overlay{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.7);
+    
+    transition: bottom .5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.meettheteam-container .teachers-container .sir:hover .overlay 
+{
+    visibility: visible;
+    bottom: 0;
+    color: white;
+}
+.sir:hover .likha{
+    opacity: 100%;
+   transform: translateY(-15%);
+}
+
+ .sir .likha {
+    opacity: 0;
+   position: absolute;
+   top: 40;
+   text-align: center;
+   color: white;
+   z-index: 4;
+   transition: all 0.4s ease;
+ }
+ .sir .likha p{
+    font-size: 25px;
+    margin-bottom: 7px;
+ }
+ .sir .likha span{
+    font-size: 15px;
+ }
+
+ .sir .likha .social_icons{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+ }
+ .sir .likha .social_icons .social_icons-gol{
+    background-color: #A1A1A1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+ }
+ .sir .likha .social_icons .social_icons-gol:hover:nth-child(1){
+    background-color: #3B5998;
+ }
+ .sir .likha .social_icons .social_icons-gol:hover:nth-child(2){
+    background-color: #1DA1F2;
+ }
+ .sir .likha .social_icons .social_icons-gol:hover:nth-child(3){
+    background-color: #E50325;
+ }
+
+
+ /* ---------------------For Mobile Devices ------------------- */
+@media (max-width:600px){
+   .meettheteam-container{
+      
+      height: auto;
+    padding: 70px 40px !important;
+  }
+  .meettheteam-container h1{
+
+      font-size: 30px;
+      text-align: center;
+ 
+  }
+  .meettheteam-container .teachers-container{
+   
+      height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+      
+  }
+  .meettheteam-container .teachers-container img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      
+  }
+  .meettheteam-container .teachers-container .sir{
+      width: 60%;
+      height: 40vh;
+     background-color: var(--color-green);
+     position: relative;
+     overflow: hidden;
+     z-index: 1;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+      
+  }
+  
+}
+

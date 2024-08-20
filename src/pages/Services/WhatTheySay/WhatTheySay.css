@@ -1,0 +1,105 @@
+.whattheysay-container {
+  height: 105vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.whattheysay-container h1 {
+  font-size: 50px;
+  color: var(--color-violet);
+}
+.whattheysay-container p {
+  color: var(--color-violet);
+}
+
+.sayings-card-container {
+  display: flex;
+  width: 95%;
+  height: 47vh;
+  padding: 20px 30px;
+
+  gap: 20px;
+}
+.sayings-card {
+  width: 50%;
+  background-color: #fbf8ff;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+.sayings-card p {
+  line-height: 1.5;
+  padding: 20px;
+  text-align: justify;
+}
+.sayings-card .niche {
+  display: flex;
+
+  justify-content: space-between;
+}
+.sayings-card .niche .niche-baame {
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+  gap: 10px;
+}
+.sayings-card .niche .niche-baame img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.sayings-card .niche .niche-baame .likha {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+}
+.sayings-card .niche .niche-baame .likha .a {
+  padding: 2px;
+  color: var(--color-green);
+  font-weight: 700;
+}
+.sayings-card .niche .niche-baame .likha .b {
+  padding: 2px 6px;
+  font-size: 13px;
+}
+.sayings-card .niche .icon {
+  font-size: 50px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+/* ---------------------For Mobile Devices ------------------- */
+@media (max-width:600px){
+  .whattheysay-container {
+    height: auto;
+    padding: 70px 40px !important;
+  }
+  .whattheysay-container h1 {
+    font-size: 30px;
+  }
+  .whattheysay-container p {
+    font-size: 14px;
+  }
+  
+  .sayings-card-container {
+
+    flex-direction: column;
+
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 20px 30px;
+  
+    gap: 20px;
+  }
+  .sayings-card {
+    width: 100%;
+    background-color: #fbf8ff;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    padding: 30px 20px;
+  }
+  
+}

@@ -1,0 +1,102 @@
+.container-appoinment{
+    display: grid;
+    grid-template-columns: 1.95fr 1.5fr;
+    padding: 100px 140px;
+    grid-gap: 30px;
+}
+.container-appoinment .left-container{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 70px 30px;
+}
+
+.container-appoinment .left-container h1{
+    color: var(--color-violet);
+    font-size: 40px;
+    
+}
+.container-appoinment .left-container p{
+    color: var(--color-violet);
+    line-height: 1.5;
+}
+.container-appoinment .left-container .form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.container-appoinment .left-container .form .form-input{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.container-appoinment .left-container .form .form-input p{
+    font-weight: 600;
+}
+.container-appoinment .left-container .form .form-input .form-box{
+    height: 37px;
+    border: 1px solid var(--color-green);
+    outline: none;
+    padding: 15px 10px;
+    background-color: #FBF8FF;
+    border-radius: 2px;
+}
+.container-appoinment .left-container .form .form-input select, input[type="date"] {
+    height: 37px;
+    border: 1px solid var(--color-green);
+    outline: none;
+    padding: 0px 10px;
+    background-color: #FBF8FF;
+    border-radius: 2px;
+    color: #F2705A;
+}
+.container-appoinment .left-container .form .form-input .form-box:focus{
+    border: 1px solid #F6B4AD;
+    color: red;
+}
+.container-appoinment .left-container button{
+    padding: 10px 20px;
+    border-radius: 0;
+}
+.container-appoinment .left-container button:hover{
+    background-color: var(--color-green);
+}
+
+/* ---------------------For Mobile Devices ------------------- */
+@media (max-width:600px){
+    .container-appoinment{
+        display: flex;
+       flex-direction: column;
+        padding: 70px 40px;
+        gap: 30px;
+    }
+    .container-appoinment .left-container{
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px;
+    }
+    
+    .container-appoinment .left-container h1{
+        color: var(--color-violet);
+        font-size: 30px;
+        
+    }
+    .container-appoinment .left-container p{
+     font-size: 14px;
+     text-align: left;
+    }
+    .container-appoinment .left-container .form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+}

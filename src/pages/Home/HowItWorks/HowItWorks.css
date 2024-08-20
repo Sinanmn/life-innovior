@@ -1,0 +1,54 @@
+.howitworks_container{
+    background-image: url("../../../assets/images/bg-pattern.png");
+    height: 100vh;
+    background-color: var(--color-violet);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 30px;
+}
+
+.howitworks_container h5{
+   font-size: 18px; 
+}
+.howitworks_container h1{
+    font-size: 50px; 
+ }
+ .howitworks_container .mirror_container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+ }
+
+ /* -----------------For Mobile Devices------------- */
+
+ @media (max-width: 600px){
+
+   .howitworks_container{
+      height: auto;
+      padding: 70px 40px !important;
+  }
+  
+  .howitworks_container h5{
+     font-size: 16px; 
+  }
+  .howitworks_container h1{
+      font-size: 30px; 
+   }
+   .howitworks_container .mirror_container{
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+      flex-direction: column;
+      
+   }
+ }
+ 

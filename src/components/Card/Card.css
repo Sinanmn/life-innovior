@@ -1,0 +1,39 @@
+.card {
+  width: 25%;
+  height: 250px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.card .card_image img {
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.card .card_image img:hover{
+    filter: grayscale(100%)
+}
+.card p {
+  color: var(--color-violet);
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* --------------- For Mobile Devices ---------------------- */
+
+@media (max-width:600px){
+.card {
+  width: 100%;
+  height: auto;
+}
+
+.card p {
+  color: var(--color-violet);
+  margin: 10px 0;
+  font-weight: 700;
+  font-size: 16px;
+}
+}

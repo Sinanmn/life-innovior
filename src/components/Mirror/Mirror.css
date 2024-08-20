@@ -1,0 +1,59 @@
+.mirror{
+    width: 33%;
+    height: 400px;
+    padding: 40px 0;
+    
+    background-color: rgba(117, 76, 130, 0.8);
+    position: relative;
+   
+ }
+ .numbering{
+   
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-violet);
+    background-color: white;
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+ }
+ .mirror ul{
+  
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 20px;
+ }
+ .mirror li{
+    display: flex;
+    align-items: center;
+ }
+ .mirror .tick_icon{
+    font-size: 24px;
+ }
+
+ /* ----------------- For Mobile Device ----------------- */
+@media (max-width:600px){
+   .mirror{
+      width: 100%;
+      height: auto;
+      padding: 30px 20px !important;
+      font-size: 14px;
+   }
+   .numbering{
+     
+      width: 45px;
+      height: 45px;
+      font-size: 20px;
+   }
+
+}
